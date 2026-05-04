@@ -13,4 +13,4 @@ children = st.number_input('Enter Number of Children', min_value=0, max_value=
 if st.button('Predict Charges'):
     input_data = [[age, bmi, children]]
     prediction = m.predict(input_data)
-    st.error(f'Predicted Medical Charges: ${prediction}')
+    st.error(f'Predicted Medical Charges: ${prediction[0]}')
